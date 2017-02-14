@@ -1,7 +1,16 @@
-html,
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    color: #3b3b3b;
+}
+
+a {
+    color: #e2292f;
+    text-decoration: none;
 }
 
 header {
@@ -28,7 +37,7 @@ header h1 {
     margin: 0 auto;
 }
 
-#footer {
+footer {
     font-size: 30px;
     padding: 20px;
     background: #f6f6f6;
@@ -39,7 +48,7 @@ header h1 {
     width: 100%;
 }
 
-#footer p {
+footer p {
     color: #444;
     font-size: 15px;
     text-align: center;
