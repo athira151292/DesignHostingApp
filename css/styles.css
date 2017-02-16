@@ -14,7 +14,9 @@ a {
     text-decoration: none;
 }
 
+a:focus,
 a:hover {
+    color: #e2292f;
     text-decoration: underline;
 }
 
@@ -93,16 +95,21 @@ footer p,
     font-size: 15px;
 }
 
+.footer-left {
+    padding: 70px 0;
+}
+
 .footer-left,
 .footer-right {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
-    width: 50%;
 }
 
 .footer-right {
     text-align: right;
     line-height: 22px;
+    float: right;
+    padding: 20px 0;
 }
 
 .footer-right .all-locations {
@@ -131,6 +138,8 @@ footer p,
 
 .location {
     text-align: right;
+    margin: 0;
+    display: inline-block;
 }
 
 .contact {
@@ -138,4 +147,94 @@ footer p,
     font-family: "ProximaNova-Bold";
     font-size: 18px;
     margin-top: 4px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 5px 8px 7px;
+}
+
+.linked-in:after {
+    font-family: 'FontAwesome';
+    content: "\f0e1";
+    color: #797979;
+}
+
+.linked-in:hover:after {
+    color: #0073b2;
+}
+
+.twitter:after {
+    font-family: 'FontAwesome';
+    content: "\f099";
+    color: #797979;
+}
+
+.twitter:hover:after {
+    color: #2daae1;
+}
+
+.fb:after {
+    font-family: 'FontAwesome';
+    content: "\f09a";
+    color: #797979;
+}
+
+.fb:hover:after {
+    color: #536da5;
+}
+
+.slide-share:after {
+    font-family: 'FontAwesome';
+    content: "\f1e7";
+    color: #797979;
+}
+
+.slide-share:hover:after {
+    color: #fff;
+}
+
+.youtube:after {
+    font-family: 'FontAwesome';
+    content: "\f167";
+    color: #797979;
+}
+
+.youtube:hover:after {
+    color: #ff3132;
+}
+
+.google-plus:after {
+    font-family: 'FontAwesome';
+    content: "\f0d5";
+    color: #797979;
+}
+
+.google-plus:hover:after {
+    color: #f63e28;
+}
+
+.copyright {
+    font-size: 11px;
+}
+
+@media (max-width: 767px) {
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .footer-right .all-locations {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .location {
+        text-align: center;
+    }
+    .social-icons a {
+        margin: 10px 3% 7px;
+    }
 }
