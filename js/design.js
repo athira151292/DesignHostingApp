@@ -5,12 +5,28 @@ $(document).ready(function() {
             designArr = field;
         });
         for (i = 0; i < designArr.length; i++) {
-            var array = $.map(designArr[i], function(value, index) {
-                return value;
+            var title = designArr[i].title;
+
+
+            var array_value = $.map(designArr[i], function(value, index) {
+                    return value;
+                }),
+                array_index = $.map(designArr[i], function(value, index) {
+                    return index;
+                });
+            $(".design-section").append('<div class="design-contents"><h2>' + title + '</h2></div>');
+            $.each(designArr[i], function(index, value) {
+                if (index != 'title') {
+                    $(".design-section").append('<p><a href="/DesignHostingApp' + value + '" target="_blank">' + index + '</a></p>');
+                }
             });
-            console.log(array);
-            for (j = 0; j < array.length; j++)
-                $(".design-wrap").append('<a>' + array[j] + '</a>');
+
         }
     });
+
+
 });
+$(function() {
+    $(".design-section").accordion();
+});
+
