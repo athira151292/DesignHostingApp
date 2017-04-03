@@ -6,7 +6,8 @@
 html,
 body {
     color: #3b3b3b;
-    font-family: 'ProximaNova-Regular';
+    font-family: 'OpenSans-Regular';
+    height: 100%;
 }
 
 a {
@@ -22,18 +23,18 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url('../fonts/ProximaNova-Regular.eot') format('eot'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('ttf'), url('../fonts/OpenSans-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'ProximaNova-Semibold';
-    src: url('../fonts/ProximaNova-Semibold.eot') format('eot'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.ttf') format('ttf'), url('../fonts/ProximaNova-Semibold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'ProximaNova-Bold';
-    src: url('../fonts/ProximaNova-Bold.eot') format('eot'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('ttf');
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('ttf'), url('../fonts/OpenSans-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -44,32 +45,36 @@ a:hover {
     font-style: normal;
 }
 
+.wrapper.main-wrapper {
+    min-height: 100%;
+    margin-bottom: -177px;
+}
+
+.main-wrapper:after {
+    content: "";
+    display: block;
+    height: 177px;
+}
+
+
+/* Header */
+
 header {
-    color: #000;
     font-size: 30px;
     background: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #e3e3e3;
     text-align: center;
-    height: 60px;
-    margin-top: 15px;
+    height: 75px;
 }
 
 header img {
     float: left;
 }
 
-header h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 30px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
 header a {
     vertical-align: middle;
     display: inline-block;
     float: left;
+    margin-top: 12px;
 }
 
 .wrapper {
@@ -78,16 +83,24 @@ header a {
     width: 95%;
 }
 
+
+/* Footer */
+
 footer {
     font-size: 30px;
     padding: 20px 0;
     background: #f6f6f6;
     color: #000;
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #1e1e1e;
-    display: table;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer p,
@@ -96,21 +109,9 @@ footer p,
     font-size: 15px;
 }
 
-.footer-left {
-    padding: 70px 0;
-}
-
-.footer-left,
-.footer-right {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .footer-right {
     text-align: right;
     line-height: 22px;
-    float: right;
-    padding: 20px 0;
 }
 
 .footer-right .all-locations {
@@ -145,7 +146,7 @@ footer p,
 
 .contact {
     color: #fff;
-    font-family: "ProximaNova-Bold";
+    font-family: "OpenSans-Bold";
     font-size: 18px;
     margin-top: 4px;
 }
@@ -221,13 +222,51 @@ footer p,
     font-size: 11px;
 }
 
+
+/* Home page */
+
+.design-wrap h1 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'OpenSans-Bold';
+    color: #e2292f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.design-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.design-block {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+}
+
+.design-block h2 {
+    font-family: 'OpenSans-Bold';
+    font-size: 22px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.design-block p {
+    margin-bottom: 10px;
+}
+
+.design-block a {
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+
+/* Responsive styles */
+
 @media (max-width: 767px) {
-    .footer-left,
-    .footer-right {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
     .footer-right .all-locations {
         margin-top: 10px;
         margin-bottom: 0;
@@ -237,5 +276,23 @@ footer p,
     }
     .social-icons a {
         margin: 10px 3% 7px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 75px;
+        height: 39px;
+    }
+    .design-wrap h1 {
+        font-size: 25px;
     }
 }
