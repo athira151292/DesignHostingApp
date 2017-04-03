@@ -230,6 +230,8 @@ footer p,
     font-size: 28px;
     font-family: 'OpenSans-Bold';
     color: #e2292f;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .design-section {
@@ -248,7 +250,12 @@ footer p,
 .design-block h2 {
     font-family: 'OpenSans-Bold';
     font-size: 22px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.design-block p {
+    margin-bottom: 10px;
 }
 
 .design-block a {

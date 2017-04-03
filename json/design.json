@@ -1,18 +1,18 @@
 {
 	"data": [{
 		"title": "Home",
-		"design1": "/images/home.png",
-		"design2": "/home.html",
-		"design3": "/images/pic2.png"
+		"Design1": "/images/home.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
 	}, {
 		"title": "Company",
-		"design1": "/images/company.png",
-		"design2": "/home.html",
-		"design3": "/images/pic2.png"
+		"Design1": "/images/company.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
 	}, {
 		"title": "Services",
-		"design1": "/images/services.png",
-		"design2": "/home.html",
-		"design3": "/images/pic2.png"
+		"Design1": "/images/services.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
 	}]
 }
