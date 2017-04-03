@@ -44,6 +44,18 @@ a:hover {
     font-style: normal;
 }
 
+#wrap {
+    min-height: 95.6%;
+    height: auto;
+    margin: 0 auto -51px;
+    padding-bottom: 51px;
+    position: relative;
+}
+
+#page {
+    height: 100%;
+}
+
 
 /* Header */
 
@@ -80,7 +92,6 @@ footer {
     padding: 20px 0;
     background: #f6f6f6;
     color: #000;
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #1e1e1e;
