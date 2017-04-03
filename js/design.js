@@ -6,27 +6,12 @@ $(document).ready(function() {
         });
         for (i = 0; i < designArr.length; i++) {
             var title = designArr[i].title;
-
-
-            var array_value = $.map(designArr[i], function(value, index) {
-                    return value;
-                }),
-                array_index = $.map(designArr[i], function(value, index) {
-                    return index;
-                });
-            $(".design-section").append('<h2>' + title + '</h2>');
+            $(".design-section").append('<div class="design-block"><h2>' + title + '</h2></div>');
             $.each(designArr[i], function(index, value) {
                 if (index != 'title') {
-                    $(".design-section").append('<p><a href="/DesignHostingApp' + value + '" target="_blank">' + index + '</a></p>');
+                    $(".design-block").last().append('<p><a href="/DesignHostingApp' + value + '" target="_blank">' + index + '</a></p>');
                 }
             });
-
         }
     });
-
-
 });
-$(function() {
-    $(".design-section").accordion();
-});
-

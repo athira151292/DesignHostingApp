@@ -6,7 +6,8 @@
 html,
 body {
     color: #3b3b3b;
-    font-family: 'ProximaNova-Regular';
+    font-family: 'OpenSans-Regular';
+    height: 100%;
 }
 
 a {
@@ -22,18 +23,18 @@ a:hover {
 }
 
 @font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url('../fonts/ProximaNova-Regular.eot') format('eot'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('ttf'), url('../fonts/OpenSans-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'ProximaNova-Semibold';
-    src: url('../fonts/ProximaNova-Semibold.eot') format('eot'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.ttf') format('ttf'), url('../fonts/ProximaNova-Semibold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'ProximaNova-Bold';
-    src: url('../fonts/ProximaNova-Bold.eot') format('eot'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('ttf');
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('ttf'), url('../fonts/OpenSans-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -44,16 +45,15 @@ a:hover {
     font-style: normal;
 }
 
-#wrap {
-    min-height: 95.6%;
-    height: auto;
-    margin: 0 auto -51px;
-    padding-bottom: 51px;
-    position: relative;
+.wrapper.main-wrapper {
+    min-height: 100%;
+    margin-bottom: -177px;
 }
 
-#page {
-    height: 100%;
+.main-wrapper:after {
+    content: "";
+    display: block;
+    height: 177px;
 }
 
 
@@ -62,7 +62,6 @@ a:hover {
 header {
     font-size: 30px;
     background: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #e3e3e3;
     text-align: center;
     height: 75px;
 }
@@ -147,7 +146,7 @@ footer p,
 
 .contact {
     color: #fff;
-    font-family: "ProximaNova-Bold";
+    font-family: "OpenSans-Bold";
     font-size: 18px;
     margin-top: 4px;
 }
@@ -229,8 +228,32 @@ footer p,
 .design-wrap h1 {
     text-align: center;
     font-size: 28px;
+    font-family: 'OpenSans-Bold';
     color: #e2292f;
-    font-weight: bold;
+}
+
+.design-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.design-block {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+}
+
+.design-block h2 {
+    font-family: 'OpenSans-Bold';
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.design-block a {
+    word-wrap: break-word;
+    font-size: 16px;
 }
 
 
