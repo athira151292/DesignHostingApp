@@ -1,18 +1,16 @@
-$(document).ready (function() {
-    $.getJSON("json/design.json", function (result) {
+$(document).ready(function() {
+    $.getJSON("json/design.json", function(result) {
         var designArr;
         $.each(result, function(i, field) {
             designArr = field;
         });
-        var length = designArr.length;
-        for (i = 0; i < length; i++) {
-            var title = designArr[i].title;
-            $(".design-section").append('<div class="design-block"><h2>' + title + '</h2></div>');
-            $.each(designArr[i], function(index, value) {
-                if (index != 'title') {
-                    $(".design-block").last().append('<p><a href="/DesignHostingApp' + value + '" target="_blank">' + index + '</a></p>');
-                }
+        for (i = 0; i < designArr.length; i++) {
+            var array = $.map(designArr[i], function(value, index) {
+                return value;
             });
+            console.log(array);
+            for (j = 0; j < array.length; j++)
+                $(".design-wrap").append('<a>' + array[j] + '</a>');
         }
     });
 });

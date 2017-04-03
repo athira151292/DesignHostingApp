@@ -6,8 +6,12 @@
 html,
 body {
     color: #3b3b3b;
+<<<<<<< HEAD
     font-family: 'OpenSans-Regular';
     height: 100%;
+=======
+    font-family: 'ProximaNova-Regular';
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
 
 a {
@@ -23,6 +27,7 @@ a:hover {
 }
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'OpenSans-Regular';
     src: url('../fonts/OpenSans-Regular.ttf') format('ttf'), url('../fonts/OpenSans-Regular.woff') format('woff');
 }
@@ -35,6 +40,20 @@ a:hover {
 @font-face {
     font-family: 'OpenSans-Bold';
     src: url('../fonts/OpenSans-Bold.ttf') format('ttf'), url('../fonts/OpenSans-Bold.woff') format('woff');
+=======
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.eot') format('eot'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('../fonts/ProximaNova-Semibold.eot') format('eot'), url('../fonts/ProximaNova-Semibold.woff') format('woff'), url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.eot') format('eot'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('ttf');
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
 
 @font-face {
@@ -45,6 +64,7 @@ a:hover {
     font-style: normal;
 }
 
+<<<<<<< HEAD
 .wrapper.main-wrapper {
     min-height: 100%;
     margin-bottom: -177px;
@@ -64,17 +84,41 @@ header {
     background: rgba(255, 255, 255, 0.9);
     text-align: center;
     height: 75px;
+=======
+header {
+    color: #000;
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+    height: 60px;
+    margin-top: 15px;
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
 
 header img {
     float: left;
 }
 
+<<<<<<< HEAD
+=======
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 header a {
     vertical-align: middle;
     display: inline-block;
     float: left;
+<<<<<<< HEAD
     margin-top: 12px;
+=======
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
 
 .wrapper {
@@ -83,14 +127,18 @@ header a {
     width: 95%;
 }
 
+<<<<<<< HEAD
 
 /* Footer */
 
+=======
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 footer {
     font-size: 30px;
     padding: 20px 0;
     background: #f6f6f6;
     color: #000;
+<<<<<<< HEAD
     bottom: 0;
     width: 100%;
     background-color: #1e1e1e;
@@ -101,6 +149,13 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+=======
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    display: table;
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
 
 footer p,
@@ -109,9 +164,27 @@ footer p,
     font-size: 15px;
 }
 
+<<<<<<< HEAD
 .footer-right {
     text-align: right;
     line-height: 22px;
+=======
+.footer-left {
+    padding: 70px 0;
+}
+
+.footer-left,
+.footer-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-right {
+    text-align: right;
+    line-height: 22px;
+    float: right;
+    padding: 20px 0;
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
 
 .footer-right .all-locations {
@@ -146,7 +219,11 @@ footer p,
 
 .contact {
     color: #fff;
+<<<<<<< HEAD
     font-family: "OpenSans-Bold";
+=======
+    font-family: "ProximaNova-Bold";
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
     font-size: 18px;
     margin-top: 4px;
 }
@@ -222,6 +299,7 @@ footer p,
     font-size: 11px;
 }
 
+<<<<<<< HEAD
 
 /* Home page */
 
@@ -267,6 +345,15 @@ footer p,
 /* Responsive styles */
 
 @media (max-width: 767px) {
+=======
+@media (max-width: 767px) {
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
     .footer-right .all-locations {
         margin-top: 10px;
         margin-bottom: 0;
@@ -277,6 +364,7 @@ footer p,
     .social-icons a {
         margin: 10px 3% 7px;
     }
+<<<<<<< HEAD
     .footer-wrapper {
         flex-direction: column;
         align-items: stretch;
@@ -295,4 +383,6 @@ footer p,
     .design-wrap h1 {
         font-size: 25px;
     }
+=======
+>>>>>>> 6a9f611a67cb4965625c1cda1052bbf10cdada59
 }
