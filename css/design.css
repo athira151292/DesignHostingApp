@@ -11,14 +11,14 @@ body {
 }
 
 a {
-    color: #e2292f;
+    color: #262626;
     text-decoration: none;
     cursor: pointer;
 }
 
 a:focus,
 a:hover {
-    color: #e2292f;
+    color: #262626;
     text-decoration: underline;
 }
 
