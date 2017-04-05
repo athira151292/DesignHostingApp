@@ -225,6 +225,10 @@ footer p,
 
 /* Home page */
 
+.design-wrap {
+    margin-bottom: 20px;
+}
+
 .design-wrap h1 {
     text-align: center;
     font-size: 28px;
