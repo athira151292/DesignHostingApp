@@ -2,43 +2,39 @@
 	"data": [{
 		"title": "Home",
 		"Design1": "/images/home.png",
-		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design2": "/home.html"
 	}, {
 		"title": "Company",
 		"Design1": "/images/company.png",
 		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design3": "/images/menu.png"
 	}, {
 		"title": "Services",
-		"Design1": "/images/services.png"
+		"Design1": "/images/services.png",
+		"Design2": "/images/services-mobile.png"
 	}, {
 		"title": "Careers",
 		"Design1": "/images/careers.png",
-		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design2": "/images/careers-open.png"
 	}, {
 		"title": "Solutions",
 		"Design1": "/images/solutions.png",
-		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design2": "/images/solutions-internet.png",
+		"Design3": "/images/solutions-ecommerce.png"
 	}, {
 		"title": "Industries",
 		"Design1": "/images/industries.png"
 	}, {
 		"title": "Home",
 		"Design1": "/images/home.png",
-		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design3": "/images/careers-open.png"
 	}, {
 		"title": "Company",
 		"Design1": "/images/company.png",
-		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design3": "/images/solutions-internet.png"
 	}, {
 		"title": "Services",
 		"Design1": "/images/services.png",
-		"Design2": "/home.html",
-		"Design3": "/images/pic2.png"
+		"Design3": "/images/services-mobile.png"
 	}]
 }
