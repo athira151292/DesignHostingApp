@@ -11,6 +11,32 @@
 		"Design3": "/images/pic2.png"
 	}, {
 		"title": "Services",
+		"Design1": "/images/services.png"
+	}, {
+		"title": "Careers",
+		"Design1": "/images/careers.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
+	}, {
+		"title": "Solutions",
+		"Design1": "/images/solutions.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
+	}, {
+		"title": "Industries",
+		"Design1": "/images/industries.png"
+	}, {
+		"title": "Home",
+		"Design1": "/images/home.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
+	}, {
+		"title": "Company",
+		"Design1": "/images/company.png",
+		"Design2": "/home.html",
+		"Design3": "/images/pic2.png"
+	}, {
+		"title": "Services",
 		"Design1": "/images/services.png",
 		"Design2": "/home.html",
 		"Design3": "/images/pic2.png"

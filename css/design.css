@@ -243,7 +243,8 @@ footer p,
 
 .design-block {
     text-align: center;
-    margin: 20px;   
+    margin: 20px;
+    width: 200px;
 }
 
 .design-block h2 {
