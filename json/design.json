@@ -1,4 +1,5 @@
 {
+	"project": "QBurst",
 	"data": [{
 		"title": "Home",
 		"Design1": "/images/home.png",
@@ -25,7 +26,7 @@
 		"title": "Industries",
 		"Design1": "/images/industries.png"
 	}, {
-		"title": "Home",
+		"title": "Security Testing Browser Bundle",
 		"Design1": "/images/home.png",
 		"Design3": "/images/careers-open.png"
 	}, {

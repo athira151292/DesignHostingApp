@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    if ($(".design-wrap").length > 0) {
-        $.getJSON("json/design.json", function(result) {
+
+    $.getJSON("json/design.json", function(result) {
+        document.title = result.project + " Mock Designs";
+        if ($(".design-wrap").length > 0) {
             var designArr;
             $.each(result, function(i, field) {
                 designArr = field;
@@ -25,8 +27,8 @@ $(document).ready(function() {
                     }
                 });
             }
-        });
-    }
+        }
+    });
 
     if ($(".design-image").length > 0) {
         var item = localStorage.getItem('desgin');
