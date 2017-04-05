@@ -225,6 +225,10 @@ footer p,
 
 /* Home page */
 
+.design-wrap {
+    margin-bottom: 20px;
+}
+
 .design-wrap h1 {
     text-align: center;
     font-size: 28px;
@@ -244,7 +248,7 @@ footer p,
 .design-block {
     text-align: center;
     margin: 20px;
-    width: 300px;
+    min-width: 200px;
 }
 
 .design-block h2 {
@@ -261,6 +265,15 @@ footer p,
 .design-block a {
     word-wrap: break-word;
     font-size: 16px;
+}
+
+.design-image {
+    text-align: center;
+}
+
+.design-image img {
+    width: 100%;
+    max-width: 1260px;
 }
 
 
